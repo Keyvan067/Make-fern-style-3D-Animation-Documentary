@@ -1,0 +1,479 @@
+# EP001_D_B_Cooper/blueprint.yaml
+# Full production blueprint. References characters.yaml / assets.yaml by ID only.
+# Format: 16:9, 24fps, cinematic documentary, Fern-style stylized low-poly.
+# Timings are working estimates aligned to 02_Script.md pacing (~16 min total).
+
+format: {aspect: "16:9", fps: 24, style: "Cinematic Documentary — stylized low-poly"}
+
+scenes:
+
+# ============================================================
+- scene: 1
+  title: "THE MAN WITH THE BRIEFCASE"
+  duration: ["00:00", "00:35"]
+  goal: "Create curiosity. Introduce Cooper as an unknown figure."
+  next: "Boarding Flight 305."
+  shots:
+    - shot: 1
+      time: ["00:00", "00:06"]
+      narration: "A man walks onto a commercial airplane carrying nothing more than a black briefcase."
+      characters: [CH-001]
+      assets: [LOC-001, OBJ-001, AUD-001, AUD-006]
+      camera: {type: "wide establishing", lens: "35mm", movement: "slow tracking from behind", angle: "eye level"}
+      lighting: "natural afternoon airport lighting, soft contrast"
+      direction: "CH-001 moves calmly; passengers move naturally around him; audience should not yet sense importance"
+      voice_direction: {emotion: calm, speed: slow, pause_after: "briefcase"}
+      music: {AUD-010: "low cinematic drone begins"}
+      production_method: blender
+      editing: "slow cut"
+    - shot: 2
+      time: ["00:06", "00:12"]
+      narration: "No one notices him."
+      characters: [CH-001]
+      assets: [LOC-001, AUD-001]
+      camera: {type: "medium shot", lens: "50mm", movement: "static"}
+      direction: "passengers cross frame; CH-001 remains visually ordinary among the crowd"
+      voice_direction: {emotion: calm, volume: lower, pause: short}
+      production_method: blender
+      editing: "cut"
+    - shot: 3
+      time: ["00:12", "00:20"]
+      narration: "Within the next few hours... He will hijack an airplane."
+      characters: [CH-001]
+      assets: [OBJ-001]
+      camera: {type: "close-up", lens: "85mm", movement: "slow push-in"}
+      direction: "focus on briefcase; do not reveal contents; build mystery"
+      voice_direction: {emotion: rising tension, pause_after: "few hours"}
+      music: {AUD-010: "increases slightly"}
+      production_method: blender
+      editing: "match cut"
+    - shot: 4
+      time: ["00:20", "00:30"]
+      narration: "Collect two hundred thousand dollars... Jump into a violent storm... And disappear forever."
+      characters: [CH-001]
+      assets: [OBJ-002, VEH-001, LOC-004, AUD-004, AUD-005, AUD-008]
+      camera: {type: "fast cinematic montage"}
+      direction: "show money / aircraft / storm clouds / isolation; withhold final outcome"
+      voice_direction: {emotion: "most dramatic beat of intro", pauses: strong}
+      production_method: ai_generated
+      editing: "fast cuts"
+    - shot: 5
+      time: ["00:30", "00:35"]
+      narration: "This is the story of... D. B. Cooper."
+      assets: [AUD-010]
+      camera: {type: "title card"}
+      direction: "black screen, minimal documentary title reveal"
+      voice_direction: {emotion: very slow, silence_after: "1s"}
+      production_method: ai_generated
+      editing: "fade out"
+
+# ============================================================
+- scene: 2
+  title: "AN ORDINARY PASSENGER"
+  duration: ["00:35", "02:00"]
+  goal: "Show nobody suspects anything unusual before the flight."
+  next: "The note is delivered."
+  shots:
+    - shot: 1
+      time: ["00:35", "00:48"]
+      narration: "November 24th, 1971. The day before Thanksgiving. Portland International Airport. Business travelers hurry toward their flights. Families prepare for the holiday. Everything appears completely ordinary."
+      characters: []
+      assets: [LOC-001, AUD-001]
+      camera: {type: "wide establishing", lens: "24mm", movement: "slow drone-style push over terminal"}
+      lighting: "warm 1970s airport lighting"
+      direction: "period-accurate signage and crowd; on-screen date title overlay"
+      voice_direction: {emotion: calm, speed: normal}
+      production_method: blender
+      editing: "slow cut"
+    - shot: 2
+      time: ["00:48", "01:05"]
+      narration: "Among the passengers is a quiet man wearing a dark business suit, a white shirt, a black tie and sunglasses. He buys a one-way ticket under the name Dan Cooper."
+      characters: [CH-001]
+      assets: [LOC-001, DOC-001, AUD-001]
+      camera: {type: "medium shot", lens: "50mm", movement: "static, then slow pan to ticket counter"}
+      direction: "CH-001 pays cash, calm and unremarkable; ticket agent unaware"
+      voice_direction: {emotion: calm, emphasis: "Dan Cooper"}
+      production_method: blender
+      editing: "cut"
+    - shot: 3
+      time: ["01:05", "01:20"]
+      narration: "He carries only a briefcase. Nothing about him attracts attention."
+      characters: [CH-001]
+      assets: [OBJ-001, LOC-001]
+      camera: {type: "close-up", lens: "85mm", movement: "slow push-in on briefcase in hand"}
+      direction: "reinforce ordinariness; no dramatic scoring"
+      voice_direction: {emotion: calm, speed: slow}
+      production_method: blender
+      editing: "cut"
+    - shot: 4
+      time: ["01:20", "02:00"]
+      narration: "At exactly 2:50 PM, Northwest Orient Flight 305 departs for Seattle. No one onboard realizes they are about to become part of history."
+      characters: [CH-001, CH-002, CH-004]
+      assets: [VEH-001, LOC-001, LOC-002, AUD-001, AUD-008]
+      camera: {type: "wide + cabin interior", movement: "boarding sequence into taxi/takeoff"}
+      direction: "boarding, doors close, aircraft taxis and takes off; ordinary energy throughout"
+      voice_direction: {emotion: calm, pause_after: "history"}
+      music: {AUD-010: "low, sustained"}
+      production_method: blender
+      editing: "cut on takeoff"
+
+# ============================================================
+- scene: 3
+  title: "THE NOTE"
+  duration: ["02:00", "03:15"]
+  goal: "The first moment the ordinary flight becomes a criminal event."
+  shots:
+    - shot: 1
+      time: ["02:00", "02:20"]
+      narration: "Shortly after takeoff, Cooper orders a bourbon and soda. Moments later, he hands a folded note to flight attendant Florence Schaffner."
+      characters: [CH-001, CH-002]
+      assets: [LOC-002, AUD-002, AUD-007]
+      camera: {type: "medium shot", lens: "50mm", movement: "static, cabin service"}
+      direction: "polite, unremarkable exchange"
+      voice_direction: {emotion: calm}
+      production_method: blender
+      editing: "cut"
+    - shot: 2
+      time: ["02:20", "02:35"]
+      narration: "She assumes it is another businessman flirting with her. Without reading it, she slips it into her purse."
+      characters: [CH-002]
+      assets: [LOC-002]
+      camera: {type: "close-up on hands/purse", lens: "85mm"}
+      direction: "CH-002's casual, dismissive reaction"
+      voice_direction: {emotion: light, slightly wry}
+      production_method: blender
+      editing: "cut"
+    - shot: 3
+      time: ["02:35", "02:50"]
+      narration: "Cooper quietly leans toward her. \"Miss... you'd better read the note.\""
+      characters: [CH-001, CH-002]
+      assets: [LOC-002, AUD-007]
+      camera: {type: "close-up two-shot", lens: "85mm", movement: "static"}
+      direction: "first shift in tone — Cooper's calm becomes deliberate, not aggressive"
+      voice_direction: {emotion: "controlled tension", speed: slow, emphasis: "you'd better read the note"}
+      production_method: blender
+      editing: "cut"
+    - shot: 4
+      time: ["02:50", "03:15"]
+      narration: "The message is short. \"I have a bomb.\" Within seconds... An ordinary flight becomes a hijacking."
+      characters: [CH-002]
+      assets: [OBJ-003, LOC-002, AUD-007]
+      camera: {type: "extreme close-up on note text", lens: "100mm macro", movement: "slow push-in"}
+      direction: "hold on Florence's reaction; do not overplay panic (per CH-002 emotional rules: controlled nervousness only)"
+      voice_direction: {emotion: "serious, controlled tension", pause_after: "I have a bomb"}
+      music: {AUD-010: "shift to unsettled tone"}
+      production_method: blender
+      editing: "hard cut to black beat"
+
+# ============================================================
+- scene: 4
+  title: "A MAN IN COMPLETE CONTROL"
+  duration: ["03:15", "04:45"]
+  goal: "Show Cooper's unusual calm; introduce the demands and the bomb reveal."
+  shots:
+    - shot: 1
+      time: ["03:15", "03:35"]
+      narration: "Unlike most hijackers... Cooper never raises his voice. He never threatens the passengers. He never panics. Instead, he calmly explains exactly what he wants."
+      characters: [CH-001, CH-002]
+      assets: [LOC-002]
+      camera: {type: "medium shot", lens: "50mm", movement: "static"}
+      direction: "emphasize stillness and control per CH-001 movement rules (relaxed posture, minimal gestures)"
+      voice_direction: {emotion: calm, speed: slow}
+      production_method: blender
+      editing: "cut"
+    - shot: 2
+      time: ["03:35", "03:55"]
+      narration: "Two hundred thousand dollars. Four parachutes. A fuel truck waiting in Seattle. Nothing more. Nothing less."
+      characters: [CH-001]
+      assets: [OBJ-002, OBJ-004]
+      camera: {type: "close-up", lens: "85mm", movement: "static"}
+      direction: "list delivered plainly, without menace"
+      voice_direction: {emotion: neutral confidence, pauses: "after each demand"}
+      production_method: blender
+      editing: "match cut per demand"
+    - shot: 3
+      time: ["03:55", "04:20"]
+      narration: "When Florence sits beside him, Cooper opens his briefcase just enough for her to see several red cylinders, wires and a battery."
+      characters: [CH-001, CH-002]
+      assets: [OBJ-003, LOC-002]
+      camera: {type: "close-up on briefcase interior (partial reveal only)", lens: "85mm"}
+      direction: "never fully reveal — maintain ambiguity on authenticity (OBJ-003 rule)"
+      voice_direction: {emotion: "quiet suspense"}
+      production_method: blender
+      editing: "cut"
+    - shot: 4
+      time: ["04:20", "04:45"]
+      narration: "Whether it is a real bomb... No one will ever know."
+      characters: [CH-002]
+      assets: []
+      camera: {type: "close-up reaction shot", lens: "85mm"}
+      direction: "hold on ambiguity; no resolution"
+      voice_direction: {emotion: mystery, pause_after: "no one will ever know"}
+      production_method: blender
+      editing: "slow fade"
+
+# ============================================================
+- scene: 5
+  title: "THE NEGOTIATION"
+  duration: ["04:45", "06:15"]
+  goal: "Authorities scramble to meet demands; passengers released; only crew and Cooper remain."
+  shots:
+    - shot: 1
+      time: ["04:45", "05:10"]
+      narration: "As Flight 305 circles above Seattle, authorities race against time. The FBI. Local police. Airline officials. Everyone works to meet Cooper's demands."
+      characters: [CH-005]
+      assets: [DOC-002, VEH-001]
+      camera: {type: "montage — ground ops intercut with aircraft circling", movement: "varied, documentary handheld"}
+      direction: "cross-cutting between air and ground creates urgency without exaggeration"
+      voice_direction: {emotion: rising urgency, speed: normal}
+      music: {AUD-010: "building tension"}
+      production_method: blender
+      editing: "cross-cut montage"
+    - shot: 2
+      time: ["05:10", "05:35"]
+      narration: "When the aircraft lands, the money is delivered. The parachutes arrive."
+      characters: [CH-001]
+      assets: [OBJ-002, OBJ-004, VEH-001, LOC-001, AUD-008]
+      camera: {type: "wide tarmac shot", lens: "35mm", movement: "static"}
+      direction: "handoff at aircraft stairs, night lighting beginning"
+      voice_direction: {emotion: calm, matter-of-fact}
+      production_method: blender
+      editing: "cut"
+    - shot: 3
+      time: ["05:35", "06:15"]
+      narration: "One by one, every passenger leaves the airplane safely. Only the flight crew remains. And Cooper is still in control."
+      characters: [CH-001, CH-003, CH-004]
+      assets: [LOC-002, VEH-001, AUD-002]
+      camera: {type: "medium wide, cabin interior", movement: "slow tracking as passengers exit"}
+      direction: "emphasize emptying cabin, growing isolation"
+      voice_direction: {emotion: calm tension, pause_after: "still in control"}
+      production_method: blender
+      editing: "slow cut"
+
+# ============================================================
+- scene: 6
+  title: "INTO THE STORM"
+  duration: ["06:15", "08:30"]
+  goal: "Second flight; Cooper's unusual technical requests; deteriorating weather builds dread."
+  shots:
+    - shot: 1
+      time: ["06:15", "06:40"]
+      narration: "The aircraft takes off once again. Its destination, according to Cooper... Mexico City. But first, a refueling stop in Reno."
+      characters: [CH-001, CH-003]
+      assets: [VEH-001, LOC-002, AUD-008]
+      camera: {type: "wide exterior night takeoff", lens: "35mm", movement: "slow tracking"}
+      direction: "night lighting begins to dominate the palette"
+      voice_direction: {emotion: calm, matter-of-fact}
+      production_method: blender
+      editing: "cut"
+    - shot: 2
+      time: ["06:40", "07:15"]
+      narration: "Then Cooper makes several unusual requests. Fly low. Fly slow. Keep the landing gear partially extended. Lower the flaps. These are not random instructions. They suggest someone familiar with the Boeing 727."
+      characters: [CH-001, CH-004]
+      assets: [LOC-003, VEH-001, AUD-003]
+      camera: {type: "cockpit interior, close on instruments and pilot", lens: "50mm", movement: "static, cutting to gauges"}
+      direction: "instrument close-ups underline technical precision of the requests"
+      voice_direction: {emotion: "quiet, deliberate", emphasis: "familiar with the Boeing 727"}
+      production_method: blender
+      editing: "insert cuts to instruments"
+    - shot: 3
+      time: ["07:15", "08:30"]
+      narration: "Outside... Night has fallen. Heavy rain covers the Pacific Northwest. Strong winds shake the aircraft. The conditions are terrible. For almost anyone... Jumping would mean certain death."
+      characters: []
+      assets: [LOC-004, VEH-001, AUD-004, AUD-005, AUD-008]
+      camera: {type: "exterior storm shots intercut with aircraft shaking in turbulence", movement: "dynamic, controlled — no exaggerated shake"}
+      direction: "atmosphere-driven sequence; dread built through weather, not music stingers"
+      voice_direction: {emotion: "ominous, slow", pause_after: "certain death"}
+      music: {AUD-010: "low sustained tension"}
+      production_method: ai_generated
+      editing: "slow intercut"
+
+# ============================================================
+- scene: 7
+  title: "THE JUMP"
+  duration: ["08:30", "09:45"]
+  goal: "The central mystery moment — never show the landing."
+  shots:
+    - shot: 1
+      time: ["08:30", "08:50"]
+      narration: "At approximately 8:13 PM... The cockpit instruments register a sudden movement. The aircraft briefly shifts upward. The rear staircase has been lowered."
+      characters: [CH-003, CH-004]
+      assets: [LOC-003, VEH-001, AUD-003, AUD-008]
+      camera: {type: "cockpit reaction shot + exterior rear-stair detail", movement: "static"}
+      direction: "instrument reaction sells the moment; no direct shot of Cooper jumping"
+      voice_direction: {emotion: tense, speed: slow}
+      production_method: blender
+      editing: "cut"
+    - shot: 2
+      time: ["08:50", "09:20"]
+      narration: "None of the crew sees Cooper leave. No distress call is heard. No parachute is ever spotted. Only darkness. Only rain. Only silence."
+      characters: []
+      assets: [LOC-004, VEH-001, AUD-004, AUD-005]
+      camera: {type: "exterior wide, aircraft rear stair against storm sky", movement: "slow drift, no cuts"}
+      direction: "absence is the subject of the shot — nothing resolves, camera lingers on empty dark sky"
+      voice_direction: {emotion: "still, quiet", pauses: "after each 'only...' line"}
+      music: {AUD-010: "near silence"}
+      production_method: ai_generated
+      editing: "long hold, slow fade"
+    - shot: 3
+      time: ["09:20", "09:45"]
+      narration: "When the aircraft lands in Reno... Cooper is gone."
+      characters: [CH-003, CH-004]
+      assets: [VEH-001, LOC-001, AUD-008]
+      camera: {type: "wide tarmac landing shot", movement: "static"}
+      direction: "empty rear cabin revealed, no body no trace"
+      voice_direction: {emotion: flat, final, pause_after: "Cooper is gone"}
+      production_method: blender
+      editing: "cut to black"
+
+# ============================================================
+- scene: 8
+  title: "THE HUNT"
+  duration: ["09:45", "11:30"]
+  goal: "Introduce the scale and failure of the investigation."
+  shots:
+    - shot: 1
+      time: ["09:45", "10:05"]
+      narration: "The FBI launches one of the largest investigations in its history. The operation receives the code name... NORJAK."
+      characters: [CH-005]
+      assets: [DOC-002]
+      camera: {type: "office interior, wide then medium", movement: "static"}
+      direction: "1970s FBI office, evidence boards, period-accurate detail"
+      voice_direction: {emotion: serious, emphasis: "NORJAK"}
+      production_method: blender
+      editing: "cut"
+    - shot: 2
+      time: ["10:05", "10:35"]
+      narration: "Thousands of suspects are investigated. Former soldiers. Pilots. Skydivers. Criminals."
+      characters: [CH-005]
+      assets: [DOC-002]
+      camera: {type: "montage of files, photographs, interview room", movement: "varied static inserts"}
+      direction: "fast rhythm implies scale of investigation"
+      voice_direction: {emotion: matter-of-fact, speed: normal}
+      production_method: blender
+      editing: "fast cuts"
+    - shot: 3
+      time: ["10:35", "11:30"]
+      narration: "The forests are searched. The rivers are searched. The mountains are searched. Nothing. No body. No parachute. No trace."
+      characters: [CH-005]
+      assets: [LOC-005, DOC-002]
+      camera: {type: "aerial-style wide shots of search terrain", movement: "slow drift"}
+      direction: "vast, empty landscapes visually reinforce failure to find anything"
+      voice_direction: {emotion: "resigned, slow", pause_after: "each 'no...' line"}
+      music: {AUD-010: "quiet, unresolved"}
+      production_method: ai_generated
+      editing: "slow dissolve between shots"
+
+# ============================================================
+- scene: 9
+  title: "A SMALL DISCOVERY"
+  duration: ["11:30", "12:45"]
+  goal: "Introduce the only confirmed physical evidence ever recovered."
+  shots:
+    - shot: 1
+      time: ["11:30", "11:55"]
+      narration: "Nine years later... A young boy named Brian Ingram is playing on the banks of the Columbia River."
+      characters: [CH-006]
+      assets: [LOC-005, AUD-006]
+      camera: {type: "wide establishing, warm daylight (contrast to the night storm earlier)", movement: "slow tracking"}
+      direction: "on-screen date title: 1980"
+      voice_direction: {emotion: calm, speed: normal}
+      production_method: blender
+      editing: "cut"
+    - shot: 2
+      time: ["11:55", "12:20"]
+      narration: "While digging in the sand, he uncovers several bundles of decaying twenty-dollar bills. The serial numbers match the ransom money."
+      characters: [CH-006]
+      assets: [OBJ-002, LOC-005]
+      camera: {type: "close-up on hands and money in sand", lens: "85mm macro"}
+      direction: "tactile, grounded discovery moment"
+      voice_direction: {emotion: quiet curiosity}
+      production_method: blender
+      editing: "cut"
+    - shot: 3
+      time: ["12:20", "12:45"]
+      narration: "Exactly $5,800. It is the only confirmed piece of the ransom ever recovered. The rest... Has never been found."
+      characters: []
+      assets: [OBJ-002]
+      camera: {type: "close-up product-style shot of the bills", movement: "slow push-in"}
+      direction: "hold on the money as physical proof against the surrounding uncertainty"
+      voice_direction: {emotion: measured, pause_after: "never been found"}
+      production_method: blender
+      editing: "slow fade"
+
+# ============================================================
+- scene: 10
+  title: "THEORIES"
+  duration: ["12:45", "14:30"]
+  goal: "Present possibilities without claiming certainty."
+  style: "analytical, neutral"
+  shots:
+    - shot: 1
+      time: ["12:45", "13:30"]
+      narration: "Did Cooper die during the jump? Did he survive and disappear under a new identity? Was he a military parachutist? An airline employee? An intelligence operative? Or simply an ordinary man who planned the perfect crime?"
+      characters: []
+      assets: [DOC-002, DOC-003]
+      camera: {type: "graphic/document-style inserts per theory", movement: "static, clean cuts"}
+      direction: "each theory gets a distinct, brief visual beat — no visual favors one theory over another"
+      voice_direction: {emotion: curious, neutral, pause_after: "each question"}
+      production_method: ai_generated
+      editing: "rhythmic cut per question"
+    - shot: 2
+      time: ["13:30", "14:30"]
+      narration: "Decades of investigation have produced countless theories... But no definitive answer."
+      characters: [CH-005]
+      assets: [DOC-002]
+      camera: {type: "wide, evidence wall / archive room", movement: "slow pull-back"}
+      direction: "visual sense of accumulated, unresolved effort"
+      voice_direction: {emotion: reflective, slow}
+      music: {AUD-010: "quiet, unresolved"}
+      production_method: blender
+      editing: "slow fade"
+
+# ============================================================
+- scene: 11
+  title: "FINAL MYSTERY"
+  duration: ["14:30", "16:00"]
+  goal: "End with unanswered questions and an emotional, memorable close."
+  shots:
+    - shot: 1
+      time: ["14:30", "15:15"]
+      narration: "The most remarkable part of this story... Is not that a man hijacked an airplane. It is that he may have escaped without leaving behind a single answer. No confirmed identity. No arrest. No confession. No grave. Only questions."
+      characters: []
+      assets: [LOC-004]
+      camera: {type: "slow wide shot of empty night sky / storm clearing", movement: "very slow drift"}
+      direction: "visual emptiness mirrors the lack of answers"
+      voice_direction: {emotion: reflective, slow, pauses: "after each 'no...' line"}
+      production_method: ai_generated
+      editing: "long hold"
+    - shot: 2
+      time: ["15:15", "15:45"]
+      narration: "History remembers him as... D. B. Cooper. Yet the name on the ticket he purchased that afternoon... Was not D. B. Cooper. It was... Dan Cooper. And perhaps that is the greatest mystery of all."
+      characters: []
+      assets: [DOC-001]
+      camera: {type: "close-up on the ticket graphic", movement: "slow push-in"}
+      direction: "final thematic beat — identity itself is the unresolved mystery"
+      voice_direction: {emotion: "very slow, final", silence_after: "1s"}
+      production_method: ai_generated
+      editing: "fade to black"
+    - shot: 3
+      time: ["15:45", "16:00"]
+      narration: "What do you think happened to Dan Cooper? Did he survive the jump... Or did the storm claim him forever? Let us know your theory in the comments."
+      characters: []
+      assets: [AUD-010]
+      camera: {type: "end card / title"}
+      direction: "minimal on-screen text, direct address to audience"
+      voice_direction: {emotion: warm, direct, speed: normal}
+      production_method: ai_generated
+      editing: "fade out"
+
+# ============================================================
+total_shots: 37
+total_estimated_duration: "16:00"
+blender_shots: 28
+ai_generated_shots: 9
+note: >
+  Shot count/durations are a working draft — adjust once VO is recorded and
+  timed exactly. production_method assignments follow ai_generation_rules.yaml:
+  Blender for anything recurring/consistent, AI for one-off atmospheric or
+  graphic-insert shots (storm, empty landscapes, document graphics, theory montage).

@@ -1,0 +1,57 @@
+# EP001_D_B_Cooper/characters.yaml
+# Checked against asset_library/registry.yaml first.
+
+characters:
+  - id: CH-001
+    name: "Dan Cooper"
+    status: "REUSE — already in asset_library/registry.yaml"
+    blend_file: asset_library/characters/CH001_DanCooper.blend
+    note: "built and rendered — see reference render from earlier session"
+
+  - id: CH-002
+    name: "Florence Schaffner"
+    status: NEW
+    role: "Flight attendant, witness — first to interact with Cooper"
+    age: "mid 20s"
+    build: "slim"
+    hair: "blonde, 1971 professional airline style"
+    outfit: "authentic Northwest Orient Airlines 1971 flight attendant uniform"
+    personality: [professional, helpful, calm under pressure, observant]
+    emotional_range: {allowed: [professional smile, concern, controlled nervousness], forbidden: [extreme panic, dramatic reactions]}
+    production_method: blender
+    reusable_as: "specific named character — historically real person, do not reuse for other episodes"
+
+  - id: CH-003
+    name: "Tina Mucklow"
+    status: NEW
+    role: "Flight attendant — present during negotiation and second flight"
+    note: "listed in 01_Research.md primary people table; give her a distinct silhouette/hair from CH-002 despite same uniform"
+    outfit: "authentic Northwest Orient Airlines 1971 flight attendant uniform"
+    production_method: blender
+
+  - id: CH-004
+    name: "Captain William A. Scott"
+    status: NEW
+    role: "Aircraft captain, flight crew"
+    age: "mid 50s"
+    outfit: "authentic 1971 airline captain uniform — jacket, captain stripes, white shirt, pilot hat"
+    personality: [experienced, calm, responsible, professional]
+    production_method: blender
+
+  - id: CH-005
+    name: "FBI NORJAK Investigators"
+    status: NEW
+    role: "Investigation team (group asset, not a single named individual)"
+    era: "1970s FBI agents"
+    outfit: "dark suits, white shirts, conservative 1970s style"
+    behavior: [studying evidence, reviewing documents, working in offices, analyzing clues]
+    production_method: blender
+    reusable_as: "GENERIC — register as a reusable investigator archetype in asset_library after building (see registry.yaml -> generic_archetypes_to_build_next)"
+
+  - id: CH-006
+    name: "Brian Ingram"
+    status: NEW
+    role: "Money discovery witness (1980, child)"
+    behavior: [curious, natural, no exaggerated acting]
+    production_method: blender
+    note: "only appears in Chapter 8 — low priority to build, single short scene"

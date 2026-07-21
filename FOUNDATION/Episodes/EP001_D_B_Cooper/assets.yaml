@@ -1,0 +1,96 @@
+# EP001_D_B_Cooper/assets.yaml
+
+locations:
+  - id: LOC-001
+    name: "Portland International Airport — 1971"
+    used_in: ["Chapter 1"]
+    description: "authentic early-1970s terminal, busy but organized, Thanksgiving travelers"
+    exclude: [modern screens, modern ads, modern luggage, modern architecture]
+    production_method: blender
+    reusable_as: "GENERIC 1970s airport terminal block-out — register after building"
+
+  - id: LOC-002
+    name: "Boeing 727 Passenger Cabin"
+    used_in: ["Chapter 1", "Chapter 2", "Chapter 3"]
+    description: "Northwest Orient 727 cabin, warm lighting, narrow aisle, vintage seats"
+    production_method: blender
+    reusable_as: "GENERIC 1970s aircraft cabin interior"
+
+  - id: LOC-003
+    name: "Boeing 727 Cockpit"
+    used_in: ["Chapter 5"]
+    description: "analog instruments, night operation"
+    production_method: blender
+    reusable_as: "GENERIC vintage cockpit"
+
+  - id: LOC-004
+    name: "Pacific Northwest Storm Sky"
+    used_in: ["Chapter 5", "Chapter 6"]
+    description: "dark night sky, heavy rain, strong wind, low visibility"
+    mood: [dangerous, isolated, uncertain]
+    production_method: ai_generated
+    reason: "volumetric weather/rain/cloud motion — not worth hand-modeling, one-off atmosphere shot"
+
+  - id: LOC-005
+    name: "Columbia River Shoreline"
+    used_in: ["Chapter 8"]
+    description: "cold river environment, wet sand, forest background, 1980"
+    production_method: blender
+    reusable_as: "GENERIC river/forest shoreline"
+
+vehicles:
+  - id: VEH-001
+    name: "Northwest Orient Boeing 727-100"
+    used_in: ["Chapter 1", "Chapter 5", "Chapter 6"]
+    must_maintain: [aircraft proportions, original livery, three-engine design, rear staircase]
+    production_method: blender
+    reusable_as: "GENERIC 727-type aircraft — reskin livery per episode if needed"
+
+objects:
+  - id: OBJ-001
+    name: "Black Leather Briefcase"
+    status: "REUSE — already built, embedded with CH-001 in asset_library"
+    production_method: blender
+
+  - id: OBJ-002
+    name: "Ransom Money ($200,000, 1971 twenties)"
+    used_in: ["Chapter 4", "Chapter 8"]
+    production_method: blender
+
+  - id: OBJ-003
+    name: "Bomb Briefcase (red cylinders, wires, batteries)"
+    used_in: ["Chapter 3"]
+    rule: "never clearly confirm authenticity — maintain mystery, camera never fully reveals"
+    production_method: blender
+
+  - id: OBJ-004
+    name: "Parachute Equipment"
+    used_in: ["Chapter 4", "Chapter 5"]
+    production_method: blender
+
+documents_graphics:
+  - id: DOC-001
+    name: "Airline Ticket (Dan Cooper, Northwest Orient 1971)"
+    production_method: ai_generated
+    reason: "flat 2D graphic insert, faster via AI/graphic design than 3D modeling"
+  - id: DOC-002
+    name: "FBI NORJAK Investigation Files"
+    used_in: ["Chapter 7", "Chapter 9"]
+    production_method: blender
+  - id: DOC-003
+    name: "Newspaper Archive Graphics"
+    used_in: ["Chapter 9 (timeline)"]
+    production_method: ai_generated
+    reason: "archival newsreel/print look intentionally photorealistic for contrast — see ai_generation_rules.yaml exception"
+
+audio:
+  - {id: AUD-001, name: "Airport Ambience"}
+  - {id: AUD-002, name: "Aircraft Cabin Atmosphere"}
+  - {id: AUD-003, name: "Cockpit Atmosphere"}
+  - {id: AUD-004, name: "Storm Rain"}
+  - {id: AUD-005, name: "Strong Wind"}
+  - {id: AUD-006, name: "Footsteps"}
+  - {id: AUD-007, name: "Paper Handling"}
+  - {id: AUD-008, name: "Aircraft Engine"}
+  - {id: AUD-009, name: "Radio Communication"}
+  - {id: AUD-010, name: "Cinematic Documentary Score"}

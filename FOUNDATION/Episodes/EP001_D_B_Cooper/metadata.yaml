@@ -1,0 +1,67 @@
+# EP001_D_B_Cooper/metadata.yaml
+# Auto-generated per seo_rules.yaml (00_agent_workflow.md Step 6)
+# Chapter timestamps are estimates based on script pacing/script chapter lengths;
+# replace with exact timestamps once the final edit is locked.
+
+title_options:
+  - "The Man Who Hijacked a Plane, Vanished in a Storm, and Was Never Found"
+  - "D. B. Cooper: The Only Unsolved Hijacking in American History"
+  - "He Jumped Into a Storm With $200,000 — And Disappeared Forever"
+
+description: >
+  On November 24, 1971, a calm, well-dressed man calling himself Dan Cooper
+  boarded Northwest Orient Flight 305 with nothing but a black briefcase.
+  Hours later, he had hijacked the aircraft, collected $200,000 in ransom,
+  and vanished into a violent storm over the Pacific Northwest — parachuting
+  out of a Boeing 727 somewhere between Seattle and Reno.
+
+  More than fifty years later, the FBI's NORJAK investigation — one of the
+  longest in its history — has never confirmed his identity, his fate, or
+  where the rest of the money went. This documentary walks through the
+  confirmed timeline, the physical evidence, and the leading theories,
+  separating what is actually known from what remains speculation.
+
+  Sources: FBI NORJAK case files, FAA historical records, flight crew
+  testimony, and contemporary news archives.
+
+tags:
+  - D.B. Cooper
+  - DB Cooper documentary
+  - unsolved mysteries
+  - true crime documentary
+  - aviation mystery
+  - FBI cold case
+  - hijacking 1971
+  - Northwest Orient Flight 305
+  - NORJAK investigation
+  - Boeing 727 hijacking
+  - unsolved FBI cases
+  - true crime 3D documentary
+  - real unsolved mysteries
+  - Pacific Northwest mystery
+  - cold case documentary
+  - aviation history
+  - biggest unsolved mysteries
+  - true crime animated documentary
+
+thumbnail_concepts:
+  - concept: "Silhouette of Cooper mid-frame in the aircraft doorway, storm and darkness outside, warm cabin light behind him"
+    text: "NEVER FOUND"
+  - concept: "Close-up on the black briefcase against a dark background, single dramatic light"
+    text: "none — let the image carry it"
+  - concept: "Split composition: calm businessman on one side, storm-lit falling silhouette on the other"
+    text: "$200,000. ONE STORM. NO TRACE."
+
+chapters_estimated:
+  - {time: "0:00", label: "Cold Open"}
+  - {time: "0:35", label: "An Ordinary Passenger"}
+  - {time: "2:00", label: "The Note"}
+  - {time: "3:15", label: "A Man in Complete Control"}
+  - {time: "4:45", label: "The Negotiation"}
+  - {time: "6:15", label: "Into the Storm"}
+  - {time: "8:30", label: "The Jump"}
+  - {time: "9:45", label: "The Hunt"}
+  - {time: "11:30", label: "A Small Discovery"}
+  - {time: "12:45", label: "Theories"}
+  - {time: "14:30", label: "Final Reflection"}
+  status: "ESTIMATED — recompute from actual blueprint shot timings once production locks duration"
