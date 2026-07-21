@@ -1,0 +1,55 @@
+# ai_generation_rules.yaml
+# Source: 05_AI_Generation_Guidelines.md
+# NOTE: original prompts in this doc were written for photorealistic AI image/video
+# generation. Channel visual style is now Fern-inspired stylized low-poly (see
+# channel_identity.yaml -> visual_identity). Apply accordingly:
+#   - recurring characters/locations/objects -> build once in Blender, reuse (see asset_library)
+#   - one-off complex shots (storms, crowds, archival-style inserts) -> AI video gen,
+#     use the prompt_structure below but swap "photorealistic" descriptors for
+#     "stylized, flat-shaded, low-poly, muted palette" UNLESS the shot is intentionally
+#     an archival/newsreel-style insert, which may stay photorealistic for contrast.
+
+core_philosophy: >
+  AI generation must always serve story, emotion, historical accuracy, and visual
+  consistency. A beautiful shot without storytelling value has no purpose. AI increases
+  creative capability — it does not replace research, storytelling, direction, or
+  human judgment.
+
+general_rules:
+  - id: consistency_first
+    rule: "every generated element (character identity, environment, time period, color style, camera language) must stay consistent across the whole episode"
+  - id: reference_before_generation
+    rule: "always check character_registry / asset_registry / blueprint before generating anything new — never generate from memory"
+  - id: realism_over_fantasy
+    rule: "final result should feel like a professionally produced documentary; avoid fantasy elements, artificial AI look, overly dramatic effects"
+
+image_prompt_structure: "subject + historical_context + environment + lighting + camera_style + realism_level"
+
+video_prompt_structure: "subject + action + camera_movement + environment + lighting + mood"
+
+camera_rules:
+  prefer: [slow tracking shots, documentary handheld movement, cinematic push-ins, natural camera motion]
+  avoid: [excessive camera movement, impossible shots, Hollywood-style exaggeration]
+
+character_motion_rules:
+  prefer: [natural walking, realistic gestures, human timing, subtle expressions]
+  avoid: [fast unnatural movement, overacting, repetitive AI motion]
+
+voice_direction_fields_per_script_section: [emotion, speed, emphasis, pause_control]
+
+music_rules:
+  prefer: [ambient documentary, cinematic minimal, suspense atmosphere, emotional orchestral]
+  avoid: [overdramatic action music, trailer-style music everywhere]
+
+historical_accuracy_checklist: [clothing, architecture, vehicles, technology, documents, language]
+
+pre_accept_qc_checklist:
+  visual: ["matches asset/character registry?", "era correct?", "lighting consistent?"]
+  motion: ["movement natural?", "any AI artifacts?"]
+  story: ["does this shot help the narrative?"]
+
+file_responsibility:
+  characters: "who appears"
+  assets: "what exists"
+  blueprint: "how it is shown"
+  rule: "never repeat character/asset descriptions inside the blueprint — reference by ID only"

@@ -1,0 +1,97 @@
+# channel_identity.yaml
+# Source: merged from 01_Project_Vision.md + 02_Channel_Bible.md
+# This file does not change per episode. Read it fully before any episode work.
+
+channel:
+  name: "[Working Title]"
+  type: "Cinematic AI Documentary Channel"
+  inspiration: "Fern-style stylized 3D documentary"
+  core_promise: >
+    Transform real events, mysteries, crimes, disasters and unexplained
+    phenomena into immersive cinematic documentary episodes. Not a simple
+    AI video channel — every episode should feel like a professional
+    studio production.
+
+quality_bar_question: >
+  "If this documentary was produced by a professional studio,
+  would the audience believe it?"
+
+content_categories:
+  - True Crime
+  - Historical Mysteries
+  - Unsolved Cases
+  - Disasters
+  - Aviation Mysteries
+  - Hidden Events
+  - Historical Investigations
+
+what_we_avoid:
+  - low-effort AI videos
+  - fake news / misinformation
+  - pure speculation presented as fact
+  - clickbait without substance
+  - unnecessary violence or exploitation (esp. true crime)
+
+audience:
+  interests: [mystery, history, investigation, science, human stories, real-world events]
+  psychology: >
+    Viewers enjoy discovering unknown stories, solving mysteries,
+    understanding human decisions, exploring historical events.
+  desired_feeling: [curiosity, suspense, discovery, emotional connection]
+  principle: "The audience should not just learn information — they should experience the story."
+
+storytelling_principles:
+  accuracy_first:
+    rule: "Separate confirmed facts / evidence / witness accounts / theories / speculation. Never present fiction as fact."
+  cinematic_presentation:
+    required: [strong opening hook, clear narrative structure, emotional progression, memorable ending]
+  visual_consistency:
+    required: [character consistency, environment consistency, historical accuracy, cinematic style]
+
+narrative_voice:
+  traits: [intelligent, calm, curious, trustworthy, cinematic]
+  writing_style:
+    use: [simple but powerful language, strong visual descriptions, emotional pacing, suspense building]
+    avoid: [overdramatic language, false claims, excessive exaggeration]
+
+episode_structure_template:
+  - stage: cold_open
+    duration: "30-60s"
+    purpose: "capture attention immediately"
+    elements: [mystery, powerful question, unexpected event]
+  - stage: background
+    purpose: "introduce time, place, main people, historical context"
+  - stage: the_event
+    purpose: "explain what happened, how, who was involved"
+  - stage: investigation
+    purpose: "evidence, research, discoveries, official investigations"
+  - stage: theories
+    purpose: "different explanations, supporting evidence, remaining questions"
+  - stage: conclusion
+    purpose: "reflection, open questions, emotional impact"
+
+visual_identity:
+  overall_style: "Cinematic documentary — stylized low-poly / flat-shaded 3D (Fern-inspired), NOT photorealistic"
+  characteristics: [dark, atmospheric, premium, historically grounded]
+  camera_language: "documentary cinematography — slow tracking shots, handheld-style movement, cinematic push-ins; avoid impossible/exaggerated shots"
+  color_philosophy: [cold blue, neutral gray, warm highlights, natural contrast, desaturated/muted palette]
+
+sound_identity:
+  required_every_episode: [professional narration, ambient environments, realistic sound effects, cinematic background music]
+  music_rule: "Music supports emotion, never overpowers narration. Avoid overdramatic trailer-style music."
+
+thumbnail_philosophy:
+  must_be: [simple, emotional, recognizable, high contrast]
+  avoid: [overloaded text, fake expressions, misleading visuals]
+  communicates_within: "2 seconds — the mystery, the emotion, the central object/person"
+
+channel_personality:
+  is: "a professional documentary studio"
+  is_not: "a content farm"
+
+pre_publish_quality_checklist:
+  - "Is the story accurate?"
+  - "Are sources reliable?"
+  - "Are visuals consistent?"
+  - "Is narration engaging?"
+  - "Does the ending leave an impression?"

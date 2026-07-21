@@ -1,0 +1,45 @@
+# seo_rules.yaml
+# Source: merged from 02_Channel_Bible.md + 03_Content_Strategy.md
+# Used by the agent to auto-generate metadata.yaml for every episode (see 00_agent_workflow.md)
+
+title:
+  formula: "main_event + mystery_element + emotional_hook"
+  goal: "create curiosity WITHOUT deception"
+  good_examples:
+    - "The Man Who Hijacked a Plane and Vanished Forever"
+    - "The Mystery That Remained Unsolved for 50 Years"
+  bad_examples:
+    - "He Was NEVER Found!!! SHOCKING SECRET!!!"
+  rule: "no fake caps-lock shock language, no unearned superlatives"
+  deliverable_per_episode: "3 title options, ranked"
+
+description:
+  must_include:
+    - "2-3 sentence summary (no spoilers on the final mystery/twist)"
+    - "historical/factual context"
+    - "relevant keywords naturally worked in"
+    - "sources / further reading note"
+  deliverable_per_episode: "one final description, 150-300 words"
+
+tags:
+  focus: [topic, category, historical_keywords]
+  deliverable_per_episode: "15-20 tags, ordered by relevance"
+
+thumbnail:
+  communicates: [the mystery, the emotion, the central object/person]
+  constraint: "readable and emotional within 2 seconds"
+  avoid: [overloaded text, fake expressions, misleading visuals]
+  deliverable_per_episode: "2-3 thumbnail concept briefs (composition + text, if any)"
+
+chapters:
+  rule: "generate youtube chapter timestamps aligned to blueprint scene boundaries"
+  deliverable_per_episode: "full chapter list with timestamps once blueprint duration is locked"
+
+growth_optimization_targets:
+  retention: [strong first 30 seconds, story pacing, visual changes]
+  engagement: [invite viewer theories, encourage discussion/comments]
+  search_discovery: [title, description, keywords, thumbnail]
+
+publishing_cadence:
+  initial_phase_goal: "build channel identity — quality over quantity"
+  recommended_rate: "1 high-quality episode per week"

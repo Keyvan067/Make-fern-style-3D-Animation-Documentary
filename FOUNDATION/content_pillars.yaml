@@ -1,0 +1,63 @@
+# content_pillars.yaml
+# Source: 03_Content_Strategy.md
+# Used by the agent at Step 1 (topic selection) of 00_agent_workflow.md
+
+episode_requirements:
+  strong_story: [conflict, mystery, human_decisions, unexpected_outcomes]
+  visual_potential: [3D_environments, historical_scenes, maps, animations, evidence_visualization]
+  audience_interest: 'topic must naturally provoke: "What really happened?"'
+
+pillars:
+  - id: P01
+    name: "Unsolved Mysteries"
+    priority: 5
+    examples: [missing people, disappearances, unknown identities, unexplained events]
+    why: "strong retention, comments, viewer theories, long-term interest"
+  - id: P02
+    name: "Aviation Mysteries"
+    priority: 5
+    examples: [aircraft disappearances, hijackings, aviation investigations]
+    why: "combines technology, human decisions, danger, investigation"
+  - id: P03
+    name: "Historical Disasters"
+    priority: 4
+    examples: [industrial disasters, natural catastrophes, engineering failures]
+    why: "strong emotional storytelling, high visual potential"
+  - id: P04
+    name: "True Crime"
+    priority: 4
+    examples: [famous criminal cases, investigations, cold cases]
+    rule: "focus on investigation, evidence, human psychology — avoid unnecessary violence or exploitation"
+  - id: P05
+    name: "Hidden History"
+    priority: 3
+    examples: [forgotten events, secret operations, historical moments]
+
+future_expansion_categories:
+  - ancient mysteries
+  - space events
+  - scientific discoveries
+  - lost civilizations
+  - historical biographies
+
+topic_scoring:
+  scale: "1-10 per dimension"
+  dimensions:
+    story_score: "Does the story have a powerful narrative?"
+    mystery_score: "Does the audience want answers?"
+    visual_score: "Can this become a cinematic documentary?"
+    emotional_score: "Will viewers remember it?"
+  approval_threshold: "average >= 8/10"
+
+episode_length:
+  standard: "15-25 minutes"
+  short_form:
+    length: "8-12 minutes"
+    use_for: [testing new topics, faster production]
+  premium:
+    length: "25-45 minutes"
+    use_for: [major stories]
+
+final_principle: >
+  The channel is not built by uploading many videos. It is built by
+  creating memorable documentaries that viewers trust and return to.
